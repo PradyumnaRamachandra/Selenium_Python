@@ -8,7 +8,7 @@ driver.maximize_window()
 driver.implicitly_wait(20)
 driver.find_element_by_xpath("//input[@id='fromCity']").click()
 time.sleep(2)
-driver.find_element_by_xpath("//input[@placeholder='From']").send_keys("del")
+ele=driver.find_element_by_xpath("//input[@placeholder='From']").send_keys("del")
 time.sleep(1)
 # //p[contains(@class,'blackText')]
 from_ele=driver.find_elements_by_xpath("//p[contains(@class,'blackText')]")
